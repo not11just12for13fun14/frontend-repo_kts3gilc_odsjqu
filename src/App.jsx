@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import { BarChart3, CalendarDays, CheckCircle2, Clock, Download, LayoutDashboard, ListChecks, PlusCircle, Rupee, Users, TrendingUp } from 'lucide-react'
+import Test from './Test.jsx'
 
 const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000'
 
@@ -337,6 +338,7 @@ function Shell(){
         <Route path="/orders" element={<Orders />} />
         <Route path="/calendar" element={<CalendarView />} />
         <Route path="/reports" element={<Reports />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </div>
   )
